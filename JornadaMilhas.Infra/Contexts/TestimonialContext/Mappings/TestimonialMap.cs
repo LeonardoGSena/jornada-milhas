@@ -28,6 +28,6 @@ public class TestimonialMap : IEntityTypeConfiguration<Testimonial>
       .HasColumnName("Image")
       .HasColumnType("VARCHAR")
       .HasMaxLength(255)
-      .IsRequired(false);
+      .IsRequired(true);
   }
 }

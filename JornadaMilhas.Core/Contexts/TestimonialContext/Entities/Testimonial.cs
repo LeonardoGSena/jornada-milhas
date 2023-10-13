@@ -8,7 +8,7 @@ public class Testimonial : Entity
   {
 
   }
-  public Testimonial(string name, string testimony, string? image = null)
+  public Testimonial(string name, string testimony, string image)
   {
     Name = name;
     Testimony = testimony;
@@ -17,5 +17,5 @@ public class Testimonial : Entity
 
   public string Name { get; private set; } = string.Empty;
   public string Testimony { get; private set; } = string.Empty;
-  public string? Image { get; private set; } = string.Empty;
+  public string Image { get; private set; } = string.Empty;
 }
