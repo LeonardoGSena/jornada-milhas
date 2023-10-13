@@ -1,0 +1,12 @@
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\bin\Debug\net7.0\JornadaMilhas.Core.deps.json
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\bin\Debug\net7.0\JornadaMilhas.Core.dll
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\bin\Debug\net7.0\JornadaMilhas.Core.pdb
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\JornadaMilhas.Core.csproj.AssemblyReference.cache
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\JornadaMilhas.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\JornadaMilhas.Core.AssemblyInfoInputs.cache
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\JornadaMilhas.Core.AssemblyInfo.cs
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\JornadaMilhas.Core.csproj.CoreCompileInputs.cache
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\JornadaMilhas.Core.dll
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\refint\JornadaMilhas.Core.dll
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\JornadaMilhas.Core.pdb
+C:\workspace\JornadaMilhas\JornadaMilhas.Core\obj\Debug\net7.0\ref\JornadaMilhas.Core.dll

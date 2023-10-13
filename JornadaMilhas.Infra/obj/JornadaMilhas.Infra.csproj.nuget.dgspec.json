@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {}
+    "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {}
   },
   "projects": {
-    "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
+    "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
+        "projectUniqueName": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
         "projectName": "JornadaMilhas.Core",
-        "projectPath": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
+        "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
         "packagesPath": "C:\\Users\\lgome\\.nuget\\packages\\",
-        "outputPath": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\obj\\",
+        "outputPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {
+    "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
+        "projectUniqueName": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
         "projectName": "JornadaMilhas.Infra",
-        "projectPath": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
+        "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
         "packagesPath": "C:\\Users\\lgome\\.nuget\\packages\\",
-        "outputPath": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\obj\\",
+        "outputPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
-                "projectPath": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj"
+              "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
+                "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj"
               }
             }
           }

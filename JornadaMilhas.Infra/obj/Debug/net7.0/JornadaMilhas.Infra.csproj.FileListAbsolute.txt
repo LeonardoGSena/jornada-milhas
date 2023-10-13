@@ -1,0 +1,15 @@
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\bin\Debug\net7.0\JornadaMilhas.Infra.deps.json
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\bin\Debug\net7.0\JornadaMilhas.Infra.dll
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\bin\Debug\net7.0\JornadaMilhas.Infra.pdb
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\bin\Debug\net7.0\JornadaMilhas.Core.dll
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\bin\Debug\net7.0\JornadaMilhas.Core.pdb
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.csproj.AssemblyReference.cache
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.AssemblyInfoInputs.cache
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.AssemblyInfo.cs
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.csproj.CoreCompileInputs.cache
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.csproj.CopyComplete
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.dll
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\refint\JornadaMilhas.Infra.dll
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\JornadaMilhas.Infra.pdb
+C:\workspace\JornadaMilhas\JornadaMilhas.Infra\obj\Debug\net7.0\ref\JornadaMilhas.Infra.dll

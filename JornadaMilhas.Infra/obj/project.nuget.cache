@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cgfSCZo/e+/NblgrMX3fwtxuUYLpJ28F5ItLf1YpzMw9RBxgKx9ThG8U57kqnlTiYkcZfVvjba8sQvTmkUM8JQ==",
+  "dgSpecHash": "K+0Dy9FThKoFAbwNQPnTQtVCaHh81OhtQ8nd14sQFBLJm4+Z0X5Q++m6dlhDBHuQVil9eFyfFdd26s3gb6B4BA==",
   "success": true,
-  "projectFilePath": "c:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
+  "projectFilePath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lgome\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\lgome\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
