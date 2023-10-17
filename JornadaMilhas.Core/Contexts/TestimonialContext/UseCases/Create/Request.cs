@@ -1,6 +1,7 @@
 ﻿namespace JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create;
 
-public class Request
-{
-
-}
+public record Request(
+    string Name,
+    string Testimony,
+    string Image
+);
