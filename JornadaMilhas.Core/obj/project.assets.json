@@ -1,26 +1,52 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Flunt >= 2.0.5"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\lgome\\.nuget\\packages\\": {}
+    "C:\\Users\\vpxim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
+      "projectUniqueName": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
       "projectName": "JornadaMilhas.Core",
-      "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
-      "packagesPath": "C:\\Users\\lgome\\.nuget\\packages\\",
-      "outputPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\obj\\",
+      "projectPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
+      "packagesPath": "C:\\Users\\vpxim\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vpxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -45,6 +71,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "Flunt": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -61,7 +93,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

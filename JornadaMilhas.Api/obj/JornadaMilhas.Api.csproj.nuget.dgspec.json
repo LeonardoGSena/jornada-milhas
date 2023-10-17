@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj": {}
+    "C:\\dev\\jornada-milhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj": {
+    "C:\\dev\\jornada-milhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj",
+        "projectUniqueName": "C:\\dev\\jornada-milhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj",
         "projectName": "JornadaMilhas.Api",
-        "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj",
-        "packagesPath": "C:\\Users\\lgome\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Api\\obj\\",
+        "projectPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Api\\JornadaMilhas.Api.csproj",
+        "packagesPath": "C:\\Users\\vpxim\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vpxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,18 +22,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
-                "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj"
+              "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
+                "projectPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj"
               },
-              "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {
-                "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj"
+              "C:\\dev\\jornada-milhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {
+                "projectPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj"
               }
             }
           }
@@ -74,21 +74,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
+    "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
+        "projectUniqueName": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
         "projectName": "JornadaMilhas.Core",
-        "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
-        "packagesPath": "C:\\Users\\lgome\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\obj\\",
+        "projectPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
+        "packagesPath": "C:\\Users\\vpxim\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vpxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,6 +113,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -129,21 +135,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {
+    "C:\\dev\\jornada-milhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
+        "projectUniqueName": "C:\\dev\\jornada-milhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
         "projectName": "JornadaMilhas.Infra",
-        "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
-        "packagesPath": "C:\\Users\\lgome\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Infra\\obj\\",
+        "projectPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
+        "packagesPath": "C:\\Users\\vpxim\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vpxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,8 +163,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
-                "projectPath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj"
+              "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj": {
+                "projectPath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj"
               }
             }
           }
@@ -194,7 +200,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

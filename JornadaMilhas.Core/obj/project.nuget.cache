@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ADIqSEhdIAMWeacpnuVH4st9U0R2lIruW7vHZvTvF/UFGv0nVslq8l4FtO9UzaIeYP3j8Vdh7WY+XjHLE7LeHQ==",
+  "dgSpecHash": "cYLQEkoer/xIoj7fq7J7ZdcMejqrw6JSbDaT0vTE/+MK4KpGwwJhjo5rDqlH9SUuErBprZ1zQ3iYTnqS91897A==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\JornadaMilhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vpxim\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
