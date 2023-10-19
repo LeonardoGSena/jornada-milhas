@@ -83,6 +83,8 @@ C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\Azure.Core.dll
 C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\Azure.Identity.dll
 C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\Flunt.dll
 C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\Humanizer.dll
+C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\MediatR.dll
+C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\MediatR.Contracts.dll
 C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\dev\jornada-milhas\JornadaMilhas.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
