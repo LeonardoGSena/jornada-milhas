@@ -52,7 +52,7 @@ public class Handler : IRequestHandler<Request, Response>
         }
         #endregion
 
-        return new Response("Depoimento criado", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Image));
+        return new Response("Depoimento criado", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Testimony));
     }
 
 
