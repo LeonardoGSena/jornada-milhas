@@ -13,8 +13,9 @@ public class Repository : IRepository
         _context = context;
     }
 
-    public Task SaveAsync(Testimonial testimonial)
+    public async Task SaveAsync(Testimonial testimonial)
     {
-        throw new NotImplementedException();
+        await _context.Testimonials.AddAsync(testimonial);
+        await _context.SaveChangesAsync();
     }
 }
