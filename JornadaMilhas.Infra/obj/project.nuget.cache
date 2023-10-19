@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Z16+8lAuEGBORa2e+cb2gI04nG22jvnZWWOHFB+SAoz7hGqwIb+wNjuCHkSLrlCN4tho1oSdrGEEPQprpssmbQ==",
+  "dgSpecHash": "s0I20mXAn/o2w7d1DhAayUr3O0qBPmTXOIjVlqh0elrPLRy4cJ+fiSjnkjqDVyqLIKziULg6yFVdD153hG9oDA==",
   "success": true,
   "projectFilePath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Infra\\JornadaMilhas.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vpxim\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\vpxim\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\vpxim\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\vpxim\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\vpxim\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\vpxim\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\vpxim\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\vpxim\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

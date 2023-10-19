@@ -1,9 +1,10 @@
 ﻿using JornadaMilhas.Core.Contexts.TestimonialContext.Entities;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create.Contracts;
+using MediatR;
 
 namespace JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create;
 
-public class Handler
+public class Handler : IRequestHandler<Request, Response>
 {
     private readonly IRepository _repository;
 
@@ -12,7 +13,7 @@ public class Handler
         _repository = repository;
     }
 
-    public async Task<Response> Handle(Request request)
+    public async Task<Response> Handle(Request request, CancellationToken cancellationToken)
     {
         #region 01. Validar requisicao
         try
@@ -43,7 +44,7 @@ public class Handler
         #region 03. Persistir dados
         try
         {
-            await _repository.SaveAsync(testimonial);
+            await _repository.SaveAsync(testimonial, cancellationToken);
         }
         catch
         {
@@ -53,6 +54,7 @@ public class Handler
 
         return new Response("Depoimento criado", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Image));
     }
+
 
 }
 

@@ -4,11 +4,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddConfiguration();
 builder.AddDatabase();
 
+builder.AddTestimonialContext();
+
+builder.AddMediatR();
+
 var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-app.MapGet("/", () => "Hello World!");
+app.MapTestimonialEndpoints();
 
 app.Run();

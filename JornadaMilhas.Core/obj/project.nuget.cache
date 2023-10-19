@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "cYLQEkoer/xIoj7fq7J7ZdcMejqrw6JSbDaT0vTE/+MK4KpGwwJhjo5rDqlH9SUuErBprZ1zQ3iYTnqS91897A==",
+  "dgSpecHash": "RGBhXo5ujhXPF0olkyQ15pymcBCNSGwAn3FuFHCmWcHfwZ4jKsbO+rhMl72gQWCfTzyani462KqFH+IoFcpCAQ==",
   "success": true,
   "projectFilePath": "C:\\dev\\jornada-milhas\\JornadaMilhas.Core\\JornadaMilhas.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vpxim\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+    "C:\\Users\\vpxim\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\vpxim\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\vpxim\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\vpxim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -4,5 +4,5 @@ namespace JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create.Contrac
 
 public interface IRepository
 {
-    Task SaveAsync(Testimonial testimonial);
+    Task SaveAsync(Testimonial testimonial, CancellationToken cancellationToken);
 }
