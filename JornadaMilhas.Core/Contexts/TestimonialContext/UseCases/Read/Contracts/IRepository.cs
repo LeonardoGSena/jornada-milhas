@@ -4,5 +4,5 @@ namespace JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Contracts
 
 public interface IRepository
 {
-    Task<Testimonial?> GetOneAsync(Request request, CancellationToken cancellationToken);
+    Task<Testimonial?> GetOneAsync(Guid id, CancellationToken cancellationToken);
 }

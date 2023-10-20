@@ -15,10 +15,13 @@ public class Handler : IRequestHandler<Request, Response>
 
     public async Task<Response> Handle(Request request, CancellationToken cancellationToken)
     {
+
+        #region 01. Realizar requisição
+
         Testimonial? testimonial;
         try
         {
-            testimonial = await _repository.GetOneAsync(request, cancellationToken);
+            testimonial = await _repository.GetOneAsync(request.Id, cancellationToken);
             if (testimonial is null)
                 return new Response("Depoimento não encontrado", 404);
         }
@@ -26,6 +29,8 @@ public class Handler : IRequestHandler<Request, Response>
         {
             return new Response("Não foi possível acessar o dado", 505);
         }
+
+        #endregion
 
         return new Response("Depoimento encontrado", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Testimony));
     }

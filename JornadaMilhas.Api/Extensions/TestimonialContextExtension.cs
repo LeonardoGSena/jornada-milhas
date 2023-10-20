@@ -43,8 +43,8 @@ public static class TestimonialContextExtension
 
         #region Read
 
-        app.MapGet("api/v1/depoimentos/{id:Guid}", async (
-            JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Request request,
+        app.MapGet("api/v1/depoimentos/{id}", async (
+            [AsParameters] JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Request request,
             IRequestHandler<
                 JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Request,
                 JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Response> handler) =>
@@ -56,5 +56,7 @@ public static class TestimonialContextExtension
         });
 
         #endregion
+
+
     }
 }

@@ -15,9 +15,9 @@ public class Repository : IRepository
         _context = context;
     }
 
-    public async Task<Testimonial?> GetOneAsync(Request request, CancellationToken cancellationToken)
+    public async Task<Testimonial?> GetOneAsync(Guid id, CancellationToken cancellationToken)
     {
-        var testimonial = await _context.Testimonials.AsNoTracking().FirstOrDefaultAsync(x => x.Id == request.Id);
+        var testimonial = await _context.Testimonials.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
         await _context.SaveChangesAsync(cancellationToken);
         return testimonial;
     }
