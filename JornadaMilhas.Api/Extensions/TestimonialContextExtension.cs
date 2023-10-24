@@ -21,6 +21,14 @@ public static class TestimonialContextExtension
             JornadaMilhas.Infra.Contexts.TestimonialContext.UseCases.Read.Repository>();
 
         #endregion
+
+        #region Put
+
+        builder.Services.AddTransient<
+            JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Contracts.IRepository,
+            JornadaMilhas.Infra.Contexts.TestimonialContext.UseCases.Put.Repository>();
+
+        #endregion
     }
 
     public static void MapTestimonialEndpoints(this WebApplication app)
@@ -48,6 +56,22 @@ public static class TestimonialContextExtension
             IRequestHandler<
                 JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Request,
                 JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Response> handler) =>
+        {
+            var result = await handler.Handle(request, new CancellationToken());
+            return result.IsSuccess
+            ? Results.Ok(result)
+            : Results.Json(result, statusCode: result.Status);
+        });
+
+        #endregion
+
+        #region Put
+
+        app.MapPut("api/v1/depoimentos/{id}", async (
+            [AsParameters] JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Request request,
+            IRequestHandler<
+                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Request,
+                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Response> handler) =>
         {
             var result = await handler.Handle(request, new CancellationToken());
             return result.IsSuccess
