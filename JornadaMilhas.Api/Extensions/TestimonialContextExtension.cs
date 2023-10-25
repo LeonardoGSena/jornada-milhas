@@ -95,7 +95,5 @@ public static class TestimonialContextExtension
         });
 
         #endregion
-
-
     }
 }
