@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create;
+using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read;
+using MediatR;
 
 namespace JornadaMilhas.Api.Extensions;
 
@@ -35,32 +37,26 @@ public static class TestimonialContextExtension
     {
         #region Create
 
-        app.MapPost("api/v1/depoimentos", async (
-            JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create.Request request,
-            IRequestHandler<
-                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create.Request,
-                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create.Response> handler) =>
+        app.MapPost("api/v1/depoimentos", async (IMediator mediator, CreateTestimonialRequest request) =>
         {
-            var result = await handler.Handle(request, new CancellationToken());
-            return result.IsSuccess
-            ? Results.Created($"api/v1/depoimentos/{result.Data?.Id}", result)
-            : Results.Json(result, statusCode: result.Status);
+            var newTestimonial = await mediator.Send(new CreateTestimonialCommand(request));
+            // var result = await handler.Handle(request, new CancellationToken());
+            return newTestimonial.IsSuccess
+            ? Results.Created($"api/v1/depoimentos/{newTestimonial.Data?.Id}", newTestimonial)
+            : Results.Json(newTestimonial, statusCode: newTestimonial.Status);
         });
 
         #endregion
 
         #region Read
 
-        app.MapGet("api/v1/depoimentos/{id}", async (
-            [AsParameters] JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Request request,
-            IRequestHandler<
-                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Request,
-                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Response> handler) =>
+        app.MapGet("api/v1/depoimentos/{id:guid}", async (IMediator mediator, Guid id) =>
         {
-            var result = await handler.Handle(request, new CancellationToken());
-            return result.IsSuccess
-            ? Results.Ok(result)
-            : Results.Json(result, statusCode: result.Status);
+            var testimonial = await mediator.Send(new GetTestimonialByIdQuery(id));
+            return testimonial.IsSuccess
+                 ? Results.Ok(testimonial)
+                 : Results.Json(testimonial, statusCode: testimonial.Status);
+
         });
 
         #endregion

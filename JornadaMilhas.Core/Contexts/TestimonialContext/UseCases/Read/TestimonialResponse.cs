@@ -2,24 +2,24 @@
 
 namespace JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read;
 
-public class Response : JornadaMilhas.Core.Contexts.SharedContext.UseCases.Response
+public class TestimonialResponse : JornadaMilhas.Core.Contexts.SharedContext.UseCases.Response
 {
-    protected Response()
+    protected TestimonialResponse()
     {
 
     }
 
-    public Response(string message, int status, IEnumerable<Notification>? notifications = null)
+    public TestimonialResponse(string message, int status, IEnumerable<Notification>? notifications = null)
     {
         Message = message;
         Status = status;
         Notifications = notifications;
     }
 
-    public Response(string message, ResponseData data)
+    public TestimonialResponse(string message, ResponseData data)
     {
         Message = message;
-        Status = 201;
+        Status = 200;
         Notifications = null;
         Data = data;
     }

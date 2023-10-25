@@ -4,16 +4,16 @@ using MediatR;
 
 namespace JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read;
 
-public class Handler : IRequestHandler<Request, Response>
+public class GetTestimonialByIdHandler : IRequestHandler<GetTestimonialByIdQuery, TestimonialResponse>
 {
     private readonly IRepository _repository;
 
-    public Handler(IRepository repository)
+    public GetTestimonialByIdHandler(IRepository repository)
     {
         _repository = repository;
     }
 
-    public async Task<Response> Handle(Request request, CancellationToken cancellationToken)
+    public async Task<TestimonialResponse> Handle(GetTestimonialByIdQuery request, CancellationToken cancellationToken)
     {
 
         #region 01. Realizar requisição
@@ -23,15 +23,15 @@ public class Handler : IRequestHandler<Request, Response>
         {
             testimonial = await _repository.GetOneAsync(request.Id, cancellationToken);
             if (testimonial is null)
-                return new Response("Depoimento não encontrado", 404);
+                return new TestimonialResponse("Depoimento não encontrado", 404);
         }
         catch
         {
-            return new Response("Não foi possível acessar o dado", 505);
+            return new TestimonialResponse("Não foi possível acessar o dado", 505);
         }
 
         #endregion
 
-        return new Response("Depoimento encontrado", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Testimony));
+        return new TestimonialResponse("Depoimento encontrado", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Testimony));
     }
 }

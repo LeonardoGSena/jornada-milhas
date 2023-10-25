@@ -2,6 +2,6 @@
 
 namespace JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read;
 
-public record Request(
+public record GetTestimonialByIdQuery(
     Guid Id
-) : IRequest<Response>;
+) : IRequest<TestimonialResponse>;
