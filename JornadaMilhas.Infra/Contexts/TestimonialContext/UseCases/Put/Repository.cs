@@ -14,15 +14,12 @@ public class Repository : IRepository
         _context = context;
     }
 
-    public async Task<Testimonial?> GetOneAsync(Guid id, CancellationToken cancellationToken)
-    {
-        var testimonial = await _context.Testimonials.FindAsync(id, cancellationToken);
-        return testimonial;
-    }
+    public async Task<Testimonial?> GetTestimonialByIdAsync(Guid id, CancellationToken cancellationToken)
+        => await _context.Testimonials.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
     public async Task UpdateAsync(Testimonial testimonial, CancellationToken cancellationToken)
     {
-        await _context.Testimonials.AddAsync(testimonial);
-        await _context.SaveChangesAsync(cancellationToken);
+        _context.Testimonials.Update(testimonial);
+        await _context.SaveChangesAsync();
     }
 }

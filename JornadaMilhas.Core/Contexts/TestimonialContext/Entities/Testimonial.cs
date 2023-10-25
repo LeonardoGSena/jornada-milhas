@@ -20,13 +20,10 @@ public class Testimonial : Entity
   public string Testimony { get; private set; } = string.Empty;
   public string Image { get; private set; } = string.Empty;
 
-  public Testimonial Update(Request request)
+  public void Update(UpdateTestimonialCommand request)
   {
-    return new Testimonial
-    {
-      Name = request.Name,
-      Testimony = request.Testimonial,
-      Image = request.Image
-    };
+    Name = request.TestimonialRequest.Name;
+    Testimony = request.TestimonialRequest.Testimonial;
+    Image = request.TestimonialRequest.Image;
   }
 }

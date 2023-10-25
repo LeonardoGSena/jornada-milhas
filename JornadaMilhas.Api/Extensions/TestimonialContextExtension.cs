@@ -1,4 +1,5 @@
 ﻿using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create;
+using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read;
 using MediatR;
 
@@ -63,16 +64,12 @@ public static class TestimonialContextExtension
 
         #region Put
 
-        app.MapPut("api/v1/depoimentos/{id}", async (
-            [AsParameters] JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Request request,
-            IRequestHandler<
-                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Request,
-                JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Response> handler) =>
+        app.MapPut("api/v1/depoimentos", async (IMediator mediator, UpdateTestimonialRequest request) =>
         {
-            var result = await handler.Handle(request, new CancellationToken());
-            return result.IsSuccess
-            ? Results.Ok(result)
-            : Results.Json(result, statusCode: result.Status);
+            var updatedTestimonial = await mediator.Send(new UpdateTestimonialCommand(request));
+            return updatedTestimonial.IsSuccess
+            ? Results.Ok(updatedTestimonial)
+            : Results.Json(updatedTestimonial, statusCode: updatedTestimonial.Status);
         });
 
         #endregion

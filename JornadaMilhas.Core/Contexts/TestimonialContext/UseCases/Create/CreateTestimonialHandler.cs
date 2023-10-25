@@ -34,7 +34,7 @@ public class CreateTestimonialHandler : IRequestHandler<CreateTestimonialCommand
         Testimonial testimonial;
         try
         {
-            testimonial = new Testimonial(request.TestimonialRequest.Name, request.TestimonialRequest.Testimony, request.TestimonialRequest.Image);
+            testimonial = new Testimonial(request.TestimonialRequest.Name, request.TestimonialRequest.Testimonial, request.TestimonialRequest.Image);
         }
         catch
         {
