@@ -1,4 +1,5 @@
 ﻿using JornadaMilhas.Core.Contexts.TestimonialContext.Entities;
+using JornadaMilhas.Core.Contexts.TestimonialContext.Queries;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Contracts;
 using JornadaMilhas.Infra.Data;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +16,7 @@ public class Repository : IRepository
     }
 
     public async Task<Testimonial?> GetTestimonialByIdAsync(Guid id, CancellationToken cancellationToken)
-        => await _context.Testimonials.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+        => await _context.Testimonials.FirstOrDefaultAsync(TestimonialQueries.GetById(id), cancellationToken);
 
     public async Task UpdateAsync(Testimonial testimonial, CancellationToken cancellationToken)
     {
