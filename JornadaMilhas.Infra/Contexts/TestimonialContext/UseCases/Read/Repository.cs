@@ -1,4 +1,5 @@
 ﻿using JornadaMilhas.Core.Contexts.TestimonialContext.Entities;
+using JornadaMilhas.Core.Contexts.TestimonialContext.Queries;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read.Contracts;
 using JornadaMilhas.Infra.Data;
 using Microsoft.EntityFrameworkCore;
@@ -15,5 +16,5 @@ public class Repository : IRepository
     }
 
     public async Task<Testimonial?> GetOneAsync(Guid id, CancellationToken cancellationToken)
-     => await _context.Testimonials.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+     => await _context.Testimonials.FirstOrDefaultAsync(TestimonialQueries.GetById(id), cancellationToken);
 }
