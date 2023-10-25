@@ -1,4 +1,5 @@
 ﻿using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create;
+using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Delete;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read;
 using MediatR;
@@ -30,6 +31,14 @@ public static class TestimonialContextExtension
         builder.Services.AddTransient<
             JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put.Contracts.IRepository,
             JornadaMilhas.Infra.Contexts.TestimonialContext.UseCases.Put.Repository>();
+
+        #endregion
+
+        #region Delete
+
+        builder.Services.AddTransient<
+            JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Delete.Contracts.IRepository,
+            JornadaMilhas.Infra.Contexts.TestimonialContext.UseCases.Delete.Repository>();
 
         #endregion
     }
@@ -70,6 +79,19 @@ public static class TestimonialContextExtension
             return updatedTestimonial.IsSuccess
             ? Results.Ok(updatedTestimonial)
             : Results.Json(updatedTestimonial, statusCode: updatedTestimonial.Status);
+        });
+
+        #endregion
+
+        #region Delete
+
+        app.MapDelete("api/v1/depoimentos/{id:guid}", async (IMediator mediator, Guid id) =>
+        {
+            var testimonial = await mediator.Send(new DeleteTestimonialByIdQuery(id));
+            return testimonial.IsSuccess
+                 ? Results.Ok(testimonial)
+                 : Results.Json(testimonial, statusCode: testimonial.Status);
+
         });
 
         #endregion

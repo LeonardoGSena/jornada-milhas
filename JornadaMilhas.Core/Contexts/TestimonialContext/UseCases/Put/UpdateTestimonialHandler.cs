@@ -59,6 +59,6 @@ public class UpdateTestimonialHandler : IRequestHandler<UpdateTestimonialCommand
 
         #endregion
 
-        return new TestimonialResponse("Depoimento atualizado", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Testimony, testimonial.Image));
+        return new TestimonialResponse("Depoimento atualizado com sucesso", new ResponseData(testimonial.Id, testimonial.Name, testimonial.Testimony, testimonial.Image));
     }
 }
