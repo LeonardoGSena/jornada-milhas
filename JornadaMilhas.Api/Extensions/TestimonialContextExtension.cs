@@ -1,5 +1,6 @@
 ﻿using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Create;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Delete;
+using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.GetAll;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Put;
 using JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.Read;
 using MediatR;
@@ -26,6 +27,14 @@ public static class TestimonialContextExtension
 
         #endregion
 
+        #region GetAll
+
+        builder.Services.AddTransient<
+            JornadaMilhas.Core.Contexts.TestimonialContext.UseCases.GetAll.Contracts.IRepository,
+            JornadaMilhas.Infra.Contexts.TestimonialContext.UseCases.GetAll.Repository>();
+
+        #endregion
+
         #region Put
 
         builder.Services.AddTransient<
@@ -46,7 +55,6 @@ public static class TestimonialContextExtension
     public static void MapTestimonialEndpoints(this WebApplication app)
     {
         #region Create
-
         app.MapPost("api/v1/depoimentos", async (IMediator mediator, CreateTestimonialRequest request) =>
         {
             var newTestimonial = await mediator.Send(new CreateTestimonialCommand(request));
@@ -55,11 +63,9 @@ public static class TestimonialContextExtension
             ? Results.Created($"api/v1/depoimentos/{newTestimonial.Data?.Id}", newTestimonial)
             : Results.Json(newTestimonial, statusCode: newTestimonial.Status);
         });
-
         #endregion
 
         #region Read
-
         app.MapGet("api/v1/depoimentos/{id:guid}", async (IMediator mediator, Guid id) =>
         {
             var testimonial = await mediator.Send(new GetTestimonialByIdQuery(id));
@@ -68,11 +74,17 @@ public static class TestimonialContextExtension
                  : Results.Json(testimonial, statusCode: testimonial.Status);
 
         });
+        #endregion
 
+        #region GetAll
+        app.MapGet("api/v1/depoimentos-home", async (IMediator mediator) =>
+        {
+            var testimonials = await mediator.Send(new GetTestimonialListQuery());
+            return Results.Ok(testimonials);
+        });
         #endregion
 
         #region Put
-
         app.MapPut("api/v1/depoimentos", async (IMediator mediator, UpdateTestimonialRequest request) =>
         {
             var updatedTestimonial = await mediator.Send(new UpdateTestimonialCommand(request));
@@ -80,11 +92,9 @@ public static class TestimonialContextExtension
             ? Results.Ok(updatedTestimonial)
             : Results.Json(updatedTestimonial, statusCode: updatedTestimonial.Status);
         });
-
         #endregion
 
-        #region Delete
-
+        #region Delet
         app.MapDelete("api/v1/depoimentos/{id:guid}", async (IMediator mediator, Guid id) =>
         {
             var testimonial = await mediator.Send(new DeleteTestimonialByIdQuery(id));
@@ -93,7 +103,6 @@ public static class TestimonialContextExtension
                  : Results.Json(testimonial, statusCode: testimonial.Status);
 
         });
-
         #endregion
     }
 }
